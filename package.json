@@ -10,6 +10,14 @@
   },
   "author": "Open edX Community",
   "license": "AGPL-3.0",
+  "config": {
+    "name": "baseTestProject",
+    "exposes": {
+      "./ModuleOne": "./src/module-one/ModuleOne",
+      "./ModuleTwo": "./src/module-two/ModuleTwo",
+      "./ModuleThree": "./src/module-three/ModuleThree"
+    }
+  },
   "dependencies": {
     "@openedx/frontend-app-base-test": "file:../frontend-app-base-test/openedx-frontend-app-base-test-0.1.0.tgz",
     "@openedx/frontend-base": "file:../frontend-base/openedx-frontend-base-1.0.0.tgz",
@@ -20,5 +28,8 @@
     "react-router": "^6.26.1",
     "react-router-dom": "^6.26.1",
     "redux": "^4.2.1"
+  },
+  "devDependencies": {
+    "@edx/browserslist-config": "^1.2.0"
   }
 }
